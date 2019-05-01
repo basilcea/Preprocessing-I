@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 
+@import 'colors.less';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,4 +57,100 @@ table {
 html, body {
 	height: 100%;
 }
+/* my code starts here */
+:root{
+	font-size: 90%;
+}
+h1 {
+	font-size:3rem;
+	display:block;
+}
 
+@fullwidth: 100%;
+@halfed:50%;
+
+.container {
+	width: @fullwidth;
+	header {
+		display:flex;
+		justify-content:space-evenly;
+		width: @fullwidth;
+		height: 8rem;
+		background-color: @mushroom;
+		opacity:1;
+		padding:2rem 3rem ;
+	}
+}
+section{
+	background-size: cover;
+	opacity:0.7;
+	margin: 5% 8%
+}
+
+.navbar{
+	display:flex;
+	justify-content:flex-end;
+	padding-top:1em;
+	padding-right:10rem;
+	width:60%;
+	align-items:flex-start;
+	>.navlink{
+		margin-left: 3rem;
+		text-decoration:none;
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size:1.3rem;
+		font-weight: bold;
+		color:@black
+	}
+}
+.tagline{
+	display:flex;
+	justify-content:center;
+	order:-1;
+	width:@halfed
+}
+.passport{
+	background:url('../img/pass.jpg');
+	background-size:100%;
+	border-radius:@halfed;
+	width: 9rem;
+	height:9rem;
+	align-items: flex-end;
+	border:7px solid @mushroom;
+
+}
+.title{
+	padding:0 3rem;
+}
+h2{
+	font-size:2rem;
+	padding:2px;
+}
+h3{
+	font-size:1.5rem;
+	font-weight:bold;
+	line-height: 2em;
+}
+p{
+	font-size:1.3rem;
+	padding:10px;
+}
+.subsection{
+	padding:1rem 3rem;
+	p{
+		line-height: 2em;
+	}
+}
+.skillsdivs{
+display:flex;
+justify-content:space-between;
+}
+.skillsubsection{
+	width:25%;
+	p {
+		line-height:1;
+	}
+}
+.broken{
+	border-style:dashed;
+}
